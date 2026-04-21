@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="theme-color" content="#fafafa" id="theme-color-meta">
 <meta name="apple-mobile-web-app-title" content="Timetable">
 <link rel="apple-touch-icon" href="icon.png">
@@ -16,16 +16,16 @@
   --acc:#222;--acc2:#555;--txt:#111;--mut:#888;
   --red:#e53935;--grn:#43a047;--yel:#f9a825;--ora:#fb923c;
 }
-.th-minimal{--bg:#fafafa;--sur:#fff;--sur2:#f0f0f0;--brd:#e0e0e0;--acc:#222;--acc2:#555;--txt:#111;--mut:#888}
-.th-white  {--bg:#fff;--sur:#f7f8fa;--sur2:#eef0f3;--brd:#dde1e7;--acc:#5865f2;--acc2:#2ecc71;--txt:#1a1c1e;--mut:#7a8290}
-.th-cream  {--bg:#fdfaf5;--sur:#fff8ee;--sur2:#f3ecdf;--brd:#e6ddd0;--acc:#c07c3a;--acc2:#7ab648;--txt:#2d2318;--mut:#9a8878}
-.th-cool   {--bg:#f5f7fb;--sur:#fff;--sur2:#eaf0fa;--brd:#d0d9ea;--acc:#2563eb;--acc2:#0ea5e9;--txt:#0f1c36;--mut:#6b7a99}
-.th-light  {--bg:#f2f3f5;--sur:#fff;--sur2:#e3e5e8;--brd:#c4c9d0;--acc:#5865f2;--acc2:#1a8a4a;--txt:#2e3338;--mut:#696f7a}
-.th-dark   {--bg:#313338;--sur:#2b2d31;--sur2:#1e1f22;--brd:#1e1f22;--acc:#5865f2;--acc2:#57f287;--txt:#dbdee1;--mut:#949ba4}
-.th-darker {--bg:#1e1f22;--sur:#2b2d31;--sur2:#313338;--brd:#111214;--acc:#5865f2;--acc2:#00b0f4;--txt:#dbdee1;--mut:#80848e}
-.th-midnight{--bg:#0d0d0f;--sur:#1a1a1e;--sur2:#111114;--brd:#2a2a2f;--acc:#5865f2;--acc2:#eb459e;--txt:#dbdee1;--mut:#7a7e86}
-.th-classic{--bg:#23272a;--sur:#2c2f33;--sur2:#36393f;--brd:#202225;--acc:#7289da;--acc2:#faa61a;--txt:#fff;--mut:#99aab5}
-.th-canary {--bg:#36393f;--sur:#40444b;--sur2:#2f3136;--brd:#202225;--acc:#7289da;--acc2:#43b581;--txt:#dcddde;--mut:#8e9297}
+.th-minimal {--bg:#fafafa;--sur:#ffffff;--sur2:#f0f0f0;--brd:#e0e0e0;--acc:#222222;--acc2:#555555;--txt:#111111;--mut:#888888}
+.th-slate   {--bg:#f0f2f5;--sur:#ffffff;--sur2:#e4e8ee;--brd:#cdd3dc;--acc:#4f5ee8;--acc2:#7b89f0;--txt:#1a1d2e;--mut:#6b7280}
+.th-pearl   {--bg:#faf8f5;--sur:#ffffff;--sur2:#f2ede8;--brd:#e8ddd4;--acc:#b07a5a;--acc2:#c9967a;--txt:#2a1f1a;--mut:#9a8880}
+.th-fog     {--bg:#f2f4f7;--sur:#ffffff;--sur2:#e6eaf0;--brd:#cdd4e0;--acc:#4a6a8a;--acc2:#6a8aaa;--txt:#1a2535;--mut:#7a8898}
+.th-ivory   {--bg:#fdfbf5;--sur:#fffef9;--sur2:#f5f0e4;--brd:#e8e0cc;--acc:#a07840;--acc2:#c09858;--txt:#2a2010;--mut:#9a8868}
+.th-obsidian{--bg:#0a0a0f;--sur:#12121a;--sur2:#1a1a25;--brd:#252535;--acc:#3d9cf0;--acc2:#6ab8f7;--txt:#e8eaf0;--mut:#7a8098}
+.th-charcoal{--bg:#1e2028;--sur:#262830;--sur2:#2e3038;--brd:#383a45;--acc:#4ecba8;--acc2:#72dbbe;--txt:#dde0e8;--mut:#8890a0}
+.th-midnite {--bg:#0f1225;--sur:#161a35;--sur2:#1e2240;--brd:#2a2f55;--acc:#9b7fe8;--acc2:#b89df0;--txt:#e0e2f0;--mut:#8085b0}
+.th-ash     {--bg:#141a24;--sur:#1c2430;--sur2:#242e3c;--brd:#2e3c50;--acc:#7ab8d8;--acc2:#a0d0e8;--txt:#e0eaf4;--mut:#7090a8}
+.th-onyx    {--bg:#080808;--sur:#111111;--sur2:#1a1a1a;--brd:#222222;--acc:#e82020;--acc2:#f55050;--txt:#f0f0f0;--mut:#808080}
 
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{height:100%;background:var(--bg)}
@@ -127,10 +127,10 @@ body{
 .srow-name{font-weight:600;font-size:13px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 .srow-sub{font-size:10px;color:var(--mut);margin-top:1px}
 .sbadge{font-size:10px;padding:2px 7px;border-radius:20px;white-space:nowrap;margin-left:8px;flex-shrink:0}
-.bq{background:rgba(88,101,242,.18);color:var(--acc)}
-.bs{background:rgba(67,160,71,.15);color:var(--grn)}
-.bh{background:rgba(249,168,37,.18);color:var(--yel)}
-.be{background:rgba(94,234,212,.18);color:var(--acc2)}
+.bq{background:rgba(var(--acc-rgb),.18);color:var(--acc)}
+.bs{background:rgba(var(--acc-rgb),.15);color:var(--acc)}
+.bh{background:rgba(var(--acc-rgb),.18);color:var(--acc)}
+.be{background:rgba(var(--acc2-rgb),.2);color:var(--acc2)}
 .tgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:14px}
 .tswatch{height:36px;border-radius:10px;cursor:pointer;border:2px solid transparent}
 .tswatch.on{border-color:var(--txt)}
@@ -515,23 +515,33 @@ function eventsFor(ds){ return D.events.filter(function(e){ return e.start<=ds&&
 // THEME
 // ═══════════════════════════════════════════
 const THEMES = [
-  {id:'minimal',  label:'Minimal', bg:'#fafafa', acc:'#222'},
-  {id:'white',    label:'White',   bg:'#ffffff', acc:'#5865f2'},
-  {id:'cream',    label:'Cream',   bg:'#fdfaf5', acc:'#c07c3a'},
-  {id:'cool',     label:'Cool',    bg:'#f5f7fb', acc:'#2563eb'},
-  {id:'light',    label:'Light',   bg:'#f2f3f5', acc:'#5865f2'},
-  {id:'dark',     label:'Dark',    bg:'#313338', acc:'#5865f2'},
-  {id:'darker',   label:'Darker',  bg:'#1e1f22', acc:'#5865f2'},
-  {id:'midnight', label:'Midnight',bg:'#0d0d0f', acc:'#5865f2'},
-  {id:'classic',  label:'Classic', bg:'#23272a', acc:'#7289da'},
-  {id:'canary',   label:'Canary',  bg:'#36393f', acc:'#7289da'},
+  {id:'minimal',  label:'Minimal',  bg:'#fafafa', acc:'#222222'},
+  {id:'slate',    label:'Slate',    bg:'#f0f2f5', acc:'#4f5ee8'},
+  {id:'pearl',    label:'Pearl',    bg:'#faf8f5', acc:'#b07a5a'},
+  {id:'fog',      label:'Fog',      bg:'#f2f4f7', acc:'#4a6a8a'},
+  {id:'ivory',    label:'Ivory',    bg:'#fdfbf5', acc:'#a07840'},
+  {id:'obsidian', label:'Obsidian', bg:'#0a0a0f', acc:'#3d9cf0'},
+  {id:'charcoal', label:'Charcoal', bg:'#1e2028', acc:'#4ecba8'},
+  {id:'midnite',  label:'Midnight', bg:'#0f1225', acc:'#9b7fe8'},
+  {id:'ash',      label:'Steel',    bg:'#141a24', acc:'#7ab8d8'},
+  {id:'onyx',     label:'Onyx',     bg:'#080808', acc:'#e82020'},
 ];
+function hexToRgb(hex){
+  const r=parseInt(hex.slice(1,3),16);
+  const g=parseInt(hex.slice(3,5),16);
+  const b=parseInt(hex.slice(5,7),16);
+  return r+','+g+','+b;
+}
 function applyTheme(id){
   document.body.className = 'th-'+id;
   D.theme = id; dbSave(); renderThemeGrid();
   const t = THEMES.find(function(x){ return x.id===id; }) || THEMES[0];
   document.getElementById('theme-color-meta').setAttribute('content', t.bg);
   document.documentElement.style.background = t.bg;
+  // アクセントカラーのRGB値をCSS変数にセット
+  document.documentElement.style.setProperty('--acc-rgb', hexToRgb(t.acc));
+  // acc2はCSSクラスから取得できないためaccと同系色で代用
+  document.documentElement.style.setProperty('--acc2-rgb', hexToRgb(t.acc));
 }
 function renderThemeGrid(){
   document.getElementById('theme-grid').innerHTML = THEMES.map(function(t){
